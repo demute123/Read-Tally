@@ -1,0 +1,59 @@
+body{
+    background-image: url(book.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height:auto;
+}
+
+@font-face {
+    font-family: "LavishlyYours";
+    src: url('LavishlyYours-Regular.ttf') format('truetype');
+}
+
+h1{
+    font-family: 'LavishlyYours';
+    font-size: 120px;
+    letter-spacing: 10px;
+    font-optical-sizing: auto;
+    color: rgb(35, 148, 133);
+    padding: 20px 10px 0px 20px;
+    text-indent: 30px;
+    text-shadow: 4px 4px 0.5px rgb(242, 230, 214);
+}
+
+#tally-line{
+    display: inline-block;
+    text-indent: 120px;
+    padding-bottom: 0px;
+}
+
+p{
+    font-family:sans-serif;
+    font-weight:400;
+    font-size: 25px;
+    text-align: center;
+    color: rgb(210, 108, 108);
+}
+
+h2{
+    margin-left: 5%;
+    padding-bottom: 50px;
+}
+a:link{
+    text-decoration: none;
+    color: rgb(210, 108, 108)
+}
+
+button{
+    background-color: rgb(213, 225, 231);
+}
+#circle{
+    width: 150px;
+    height: 150px;
+    border: 3px solid rgb(49, 48, 48);
+    border-radius: 40%;
+    margin-left: 25%;
+    display: flex;
+    align-items: center;
+}
+

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="author" content="Victoria Oturo">
+        <meta name="description" content="This page counts the number of books read">
+        <meta name="keywords" content="HTML, CSS, JavaScript">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="refresh" content="45">
+        <link rel="stylesheet" href="books.css">
+        <link rel="icon" href="bookicon.jpg">
+        <title>Read Tally</title>
+    </head>
+    <body>
+        <h1>Book Count History</h1>
+
+        <dl id="history-list"></dl>
+
+        <button id="back" onclick="window.location.href='books.html'">Back</button>
+
+        <script>
+            let history = JSON.parse(localStorage.getItem("allDays") || "[]");
+            let historyList = document.getElementById("history-list");
+            history.forEach(function(entry) {
+                let dt = document.createElement("dt");
+                dt.textContent = entry.time;
+                historyList.appendChild(dt);
+                let dd = document.createElement("dd");
+                dd.textContent = "You read " + entry.count + " books.";
+                historyList.appendChild(dd);
+            });
+        </script>
+
+    </body>
+
+    </html>

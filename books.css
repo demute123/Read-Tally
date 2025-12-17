@@ -1,0 +1,104 @@
+body{
+    background-image: url(backG.jpg);
+    background-color: rgb(224, 229, 233);
+    background-blend-mode: lighten;
+}
+
+@font-face {
+    font-family: "CroissantOne";
+    src: url('CroissantOne-Regular.ttf') format('truetype');
+}
+h1{
+    text-align: center;
+    font-size: 50px;
+    padding-top: 70px;
+    font-family:'CroissantOne';
+}
+
+h2{
+    text-align: center;
+    font-size: 100px;
+}
+
+button{
+    float: none;
+}
+
+.container{
+    display: flex;
+    width:100%;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+#increase-btn{
+    font-size:70px;
+    width:100px;
+    height:80px;
+    background-color: green;
+    border: 5px solid rgb(64, 246, 76);
+}
+
+#decrease-btn{
+    font-size:70px;
+    width:100px;
+    height:80px;
+    background-color: red;
+    border:5px solid rgb(243, 101, 101);
+}
+
+#save-button{
+    font-size:20px;
+    width:100px;
+    height:80px;
+    border-radius: 50px;
+    background-color: aquamarine;
+}
+
+
+h3{
+    font-size: 35px;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    color:rgb(59, 59, 104)
+}
+
+a:link{
+    text-decoration: none;
+    color: rgb(126, 49, 215);
+    font-size: 20px;
+    text-align: center;
+    display:block;
+}
+
+p{
+    color: rgb(33, 32, 32);
+    font-size: 25px;
+    font-weight: 100;
+    text-align: center;
+}
+
+dt{
+    font-size: 30px;
+    padding-top: 30px;
+    margin-top: 10px;
+    color:brown;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+dd{
+    font-size:35px;
+    margin-top: auto;
+    font-style: italic;
+}
+
+#back{
+    width: 100px;
+    height: 50px;
+    font-size: 20px;
+    stroke-width: 10px;
+    background-color: rgb(24, 142, 24);
+}

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="author" content="Victoria Oturo">
+        <meta name="description" content="This page counts the number of books read">
+        <meta name="keywords" content="HTML, CSS, JavaScript">
+        <meta name="viewport" content="width=device-width, initial scale=1.0">
+        <meta http-equiv="refresh" content="45">
+        <link rel="stylesheet" href="streak.css">
+        <link rel="icon" href="bookicon.jpg">
+        <title>Read Tally</title>
+    </head>
+    <body>
+        <div>
+        <h1>Tally Streak!</h1>
+        <div class="fire-icon">🔥</div>
+        <div id="streak-display"><b>0</b></div>
+        <h2>Days</h2>
+        <p id="streak-sum"></p>
+        <button id="read" onclick="window.location.href='books.html'">Keep Reading and Counting!</button>
+        </div>
+    </body>
+
+    <script>
+        let currentStreak = Number(localStorage.getItem("userstreak") || 0);
+        document.getElementById("streak-display").textContent = streak
+    </script>
+</html>
